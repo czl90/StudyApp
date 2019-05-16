@@ -8,10 +8,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.studyapp_1.ListView.ListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button textViewButton;
-    private Button buttonViewButton,editTextButton,radioButton,checkboxButton,imageViewButton;
+    private Button buttonViewButton,editTextButton,radioButton,checkboxButton,imageViewButton,listViewButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         radioButton=findViewById(R.id.btn_radio);
         checkboxButton=findViewById(R.id.btn_checkbox);
         imageViewButton=findViewById(R.id.btn_imageView);
+        listViewButton=findViewById(R.id.btn_listView);
         SetListener();
     }
 
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         radioButton.setOnClickListener(onClick);
         checkboxButton.setOnClickListener(onClick);
         imageViewButton.setOnClickListener(onClick);
+        listViewButton.setOnClickListener(onClick);
     }
 
     private  class  OnClick implements View.OnClickListener{
@@ -61,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_imageView:
                     intent=new Intent(MainActivity.this,ImageViewActivity.class);
+                    break;
+                case R.id.btn_listView:
+                    intent=new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);

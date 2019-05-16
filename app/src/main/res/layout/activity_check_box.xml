@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你学习过得编程语言"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#"
+        android:layout_below="@id/text"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:layout_below="@id/checkbox1"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_below="@id/checkbox2"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:layout_below="@id/checkbox3"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/checkbox4"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你喜欢的运动项目"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="羽毛球"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_checkbox"
+            android:text="乒乓球"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

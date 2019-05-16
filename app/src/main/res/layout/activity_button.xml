@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkslategrey"
+        android:text="按钮1"
+        android:textSize="20dp" />
+
+    <!--圆角-->
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_btn"
+        android:text="按钮2" />
+
+    <!--描边-->
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bg_btn1"
+        android:text="按钮3"
+        android:textColor="@color/aqua" />
+
+    <!--点击效果-->
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_btn2"
+        android:text="按钮3"
+        android:textColor="@color/aqua" />
+
+    <!--Textview Button事件-->
+    <TextView
+        android:id="@+id/text_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:background="@color/seagreen"
+        android:gravity="center"
+        android:text="文字点击" />
+
+</RelativeLayout>

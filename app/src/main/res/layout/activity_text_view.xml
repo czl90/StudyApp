@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="60dp"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/arrow_down"
+        android:drawablePadding="2dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介即简明扼要的介绍。是当事人全面而简洁地介绍情况的一种书面表达方式，它是应用写作学研究的一种日常应用文体。"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        />
+</LinearLayout>
